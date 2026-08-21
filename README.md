@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" width="100" alt="NoCapture">
+  <img src="https://nocapture.membran.digital/logo.png" width="100" alt="NoCapture">
 </p>
 
 <h1 align="center">NoCapture</h1>
