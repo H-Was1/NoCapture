@@ -179,6 +179,7 @@ See [Contact Page](https://nocapture.membran.digital/company/contact).
 
 <p align="center">
   Built with obsession, not surveillance.<br>
+  <a href="https://www.producthunt.com/products/nocapture?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-nocapture" target="_blank" rel="noopener noreferrer"><img alt="NoCapture - AI privacy and app hiding for screen sharing | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1228484&amp;theme=light&amp;t=1787317648553"></a><br>
   <a href="https://membran.digital">Membran.digital</a> •
   <a href="mailto:contact@membran.digital">contact@membran.digital</a>
 </p>
