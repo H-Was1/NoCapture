@@ -283,8 +283,12 @@ No. A separate camera can photograph a physical display, and NoCapture cannot pr
 
 ### Does NoCapture work with every screen recorder?
 
-No. NoCapture targets supported operating-system capture paths. Test the exact recorder, meeting
-application, operating system, and display setup before using it for sensitive information.
+Yes, NoCapture is designed to protect selected windows from screen recorders,
+screen-sharing applications, and other supported operating-system capture paths.
+
+However, compatibility may vary depending on the recorder, operating system,
+graphics driver, permissions, and display configuration. Always test your exact
+setup before using NoCapture with sensitive information.
 
 ### Can I protect a password manager or terminal?
 
