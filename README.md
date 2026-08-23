@@ -21,6 +21,10 @@
 
 https://github.com/H-Was1/NoCapture/blob/main/Recording%202026-08-09%20235805.mp4
 
+NoCapture hides selected windows from screen capture, AI agents, and screen sharing at the OS level while keeping them visible to you.
+
+It supports automatic protection rules, live preview of what’s shared, and per-window control across Windows, macOS, and Linux.
+
 NoCapture groups your open windows by application. Expand an app, pick a window, hit **Protect**. It stays visible to you. Vanishes from Zoom, Teams, OBS, and every AI agent screenshotting your screen. Toggle back anytime — or automate it entirely.
 
 ---
