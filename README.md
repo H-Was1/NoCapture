@@ -1,189 +1,361 @@
 <p align="center">
-  <img src="https://nocapture.membran.digital/logo.png" width="100" alt="NoCapture">
+  <img
+    src="https://nocapture.membran.digital/logo.png"
+    width="100"
+    alt="NoCapture screen capture protection logo"
+  >
 </p>
 
-<h1 align="center">NoCapture</h1>
+<h1 align="center">NoCapture: Screen Capture Protection for Private Windows</h1>
+
 <p align="center">
-  <b>Your screen. Two realities.</b><br>
-  Hide any window from screen capture, AI agents, and screen sharing — at the OS level.
+  Protect selected windows from screen sharing, screen recording, and desktop capture
+  while keeping them visible and interactive on your computer.
 </p>
 
 <p align="center">
   <a href="https://nocapture.membran.digital">Website</a> •
-  <a href="https://nocapture.membran.digital/blog">Blog</a> •
-  <a href="https://nocapture.membran.digital/use-cases/meetings">Use Cases</a> •
-  <a href="https://nocapture.membran.digital/dashboard">Download</a>
+  <a href="https://nocapture.membran.digital/dashboard">Download</a> •
+  <a href="https://nocapture.membran.digital/use-cases/meetings">Meeting privacy</a> •
+  <a href="https://github.com/H-Was1/NoCapture/issues">Report an issue</a>
 </p>
 
----
+<p align="center">
+  <a href="https://github.com/H-Was1/NoCapture/stargazers">
+    <img src="https://img.shields.io/github/stars/H-Was1/NoCapture?style=flat-square" alt="GitHub stars">
+  </a>
+  <a href="https://github.com/H-Was1/NoCapture/network/members">
+    <img src="https://img.shields.io/github/forks/H-Was1/NoCapture?style=flat-square" alt="GitHub forks">
+  </a>
+  <a href="https://github.com/H-Was1/NoCapture/issues">
+    <img src="https://img.shields.io/github/issues/H-Was1/NoCapture?style=flat-square" alt="GitHub issues">
+  </a>
+  <a href="https://github.com/H-Was1/NoCapture/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/H-Was1/NoCapture?style=flat-square" alt="License">
+  </a>
+</p>
 
-## 🎬 See It In Action
+> NoCapture is a desktop privacy tool for protecting sensitive windows during
+> Zoom, Microsoft Teams, Google Meet, Discord, OBS, and other screen-sharing workflows.
 
-https://github.com/H-Was1/NoCapture/blob/main/Recording%202026-08-09%20235805.mp4
+## Why NoCapture?
 
-NoCapture hides selected windows from screen capture, AI agents, and screen sharing at the OS level while keeping them visible to you.
+Screen sharing can expose terminals, password managers, private messages, financial information,
+and confidential documents.
 
-It supports automatic protection rules, live preview of what’s shared, and per-window control across Windows, macOS, and Linux.
+Minimizing a window or moving it to another monitor does not always protect it from accidental
+capture. NoCapture applies operating-system-level window capture protection so a selected window
+remains visible and usable locally while being excluded from supported capture paths.
 
-NoCapture groups your open windows by application. Expand an app, pick a window, hit **Protect**. It stays visible to you. Vanishes from Zoom, Teams, OBS, and every AI agent screenshotting your screen. Toggle back anytime — or automate it entirely.
+## See It in Action
 
----
+[Watch the screen capture protection demo](https://github.com/H-Was1/NoCapture/blob/main/Recording%202026-08-09%20235805.mp4)
 
-## The Actual UI
+NoCapture hides selected windows from supported screen capture, recording, and screen-sharing
+workflows while keeping them visible to you.
 
-NoCapture isn't a system tray utility you forget about. It's a control panel for your screen.
+It supports automatic protection rules, live preview of shared content, and per-window control
+across supported Windows, macOS, and Linux environments.
 
-### Apps & Windows — Grouped, Collapsible, Instant
+## Key Features
 
-Every running app appears as a collapsible group. Expand it, see its windows, control each one individually.
+- Protect or unprotect individual application windows.
+- Keep protected windows visible and interactive locally.
+- Hide selected windows from supported screen capture and recording paths.
+- Preview the frame visible to a screen-sharing or recording workflow.
+- Hide protected windows from taskbar thumbnails and window switchers where supported.
+- Automatically re-apply protection when a protected window loses focus.
+- Configure calendar-, application-, time-, and focus-based routines.
+- Use customizable global hotkeys.
+- Apply different protection rules across multiple displays.
+- Use native operating-system APIs without kernel drivers or browser extensions.
 
-| Button | What It Does |
-|--------|-------------|
-| **🛡️ Protect / Unprotect** | The main toggle. Protects the window at the OS compositor level — invisible to screen capture, recording, and AI screenshot agents. Unprotect brings it back to the stream instantly. |
-| **👁️ Skip Taskbar** | Remove the window from taskbar thumbnails and Alt+Tab switchers. Even if someone checks your taskbar during a share, the protected app is gone from enumeration. |
-| **📌 Pin to Top** | Keep the window floating above everything else locally. Great for reference docs, notes, or private chat you need visible while presenting. |
-| **💨 Focus Lost Windows** | Detects when a protected window loses focus and auto-re-applies protection. Prevents accidental exposure when you click around during a call. |
+## Quick Start
 
-No more hunting through window lists. No more "did I minimize that?" Your entire workspace is one panel away.
+1. Download NoCapture from the [official download page](https://nocapture.membran.digital/dashboard).
+2. Launch the application.
+3. Expand an application to view its open windows.
+4. Select a window and click **Protect**.
+5. Open **Live Preview** to verify what will be visible during screen sharing.
+6. Start your meeting, presentation, or recording.
 
-### Live Preview — See What They See
+Protection behavior depends on the operating system, graphics stack, permissions, and capture method.
+Test your intended workflow before relying on NoCapture for sensitive information.
 
-Before you hit "Share Screen" in Zoom, open the **Live Preview**. It shows the exact frame that Zoom, Teams, or OBS will broadcast — not a mockup, the actual compositor output.
+## Window-Level Screen Capture Protection
 
-If you can see a protected window in the preview, something's wrong. But you won't. Because protected windows are omitted at the source.
+NoCapture groups open windows by application. Expand an application, select a window, and
+click **Protect**.
 
-[→ Why Live Preview matters](https://nocapture.membran.digital/blog/the-best-app-hider-for-screen-sharing)
+The window remains available to you locally while protection is active. You can continue to
+type, click, resize, and work normally.
 
----
+### Protect and Unprotect
 
-## Preferences — Automate The Boring Stuff
+The primary toggle controls whether a selected window is protected from supported capture paths.
 
-NoCapture handles the manual work so you don't have to think before every call.
+Click **Unprotect** to make the window visible to the capture workflow again.
+
+### Skip Taskbar
+
+Where supported, remove a protected window from taskbar thumbnails and window switchers.
+
+### Pin to Top
+
+Keep a protected window above other local windows. This is useful for private notes, reference
+documents, or chat that you need to see while presenting.
+
+### Focus Protection
+
+Automatically re-apply protection when a protected window loses focus.
+
+This helps reduce the risk of accidental exposure while switching between applications during a
+meeting or presentation.
+
+## Live Preview
+
+Live Preview shows the frame that a supported screen-sharing or recording workflow can receive.
+
+Before sharing your screen in Zoom, Microsoft Teams, Google Meet, OBS, or another application,
+use Live Preview to verify that protected windows are excluded from the output.
+
+Always test the exact application, operating system, display, and capture mode you plan to use.
+
+[Read why Live Preview matters](https://nocapture.membran.digital/blog/the-best-app-hider-for-screen-sharing)
+
+## Automation and Preferences
+
+NoCapture can automate repetitive privacy tasks so you do not have to manually protect windows
+before every call.
 
 ### Smart Routines
 
-Set rules once. They run forever.
+Create rules that automatically protect selected windows:
 
-- **Calendar-based:** Auto-protect Slack, 1Password, and your terminal 5 minutes before any Zoom meeting.
-- **App-launch based:** The moment your banking app opens, it cloaks automatically.
-- **Time-based:** Protect sensitive windows during work hours, unprotect after.
+- **Calendar-based:** Protect applications before a scheduled meeting.
+- **Application-based:** Protect a window when a selected application launches.
+- **Time-based:** Apply protection during specified work hours.
 - **Focus-based:** Re-apply protection when a protected window loses focus.
-
-You set the logic. NoCapture enforces it. Zero clicks during the actual call.
 
 ### Global Hotkeys
 
-`Ctrl+Alt+N` toggles protection on the active window. No mouse hunting while you're live. Fully customizable in Preferences — set your own combos for protect, unprotect, pin, and preview.
+Use `Ctrl+Alt+N` to toggle protection for the active window.
+
+Hotkeys can be customized in Preferences for actions such as protect, unprotect, pin, and preview.
 
 ### Personalization
 
-- **Theme:** Match your system or run dark mode.
-- **Startup behavior:** Launch with Windows, start minimized, or open the panel.
-- **Notification handling:** Choose how aggressive the notification shield is — block all, block sensitive apps only, or hold-and-release after the call.
-- **Multi-monitor:** Per-display rules. Protect windows on monitor 2 while sharing monitor 1.
+- Match your system theme or use dark mode.
+- Launch NoCapture with the operating system.
+- Start minimized or open the control panel.
+- Configure notification handling.
+- Apply different rules to different displays.
 
----
+## How NoCapture Works
 
-## What "Protect" Actually Means
+When you click **Protect**, NoCapture asks the operating system to exclude the selected window
+from supported capture output.
 
-When you hit **Protect**, NoCapture tells the OS compositor to omit that window from the capture stream.
+- **Local view:** The window remains visible, interactive, and usable.
+- **Capture output:** The window is omitted from supported screen-sharing or recording output.
+- **Workflow:** You can continue working without minimizing or closing the window.
 
-- **Local view:** The window stays fully visible, interactive, and usable. You can type in it, click it, resize it.
-- **Capture output:** The window is completely absent. Not blacked out. Not blurred. Not pixelated. The pixels are never generated in the frame buffer.
+NoCapture is designed for supported operating-system capture paths. Results may vary depending on
+the operating system, application, graphics stack, permissions, capture API, and compositor.
 
-This works against:
-- Zoom, Teams, Google Meet, Discord, WebEx
-- OBS, Streamlabs, XSplit, NVIDIA ShadowPlay
-- AI agents using Claude Desktop, Copilot Vision, and any tool screenshotting via DXGI/BitBlt/DWM
-- Native screenshot tools, screen recorders, and frame buffer readers
+## Supported Capture Workflows
 
-[→ The technical deep dive](https://nocapture.membran.digital/blog/screen-capture-apis-desktop-extraction-crisis)
+NoCapture is designed to help protect windows during workflows involving:
 
----
+- Zoom
+- Microsoft Teams
+- Google Meet
+- Discord
+- Webex
+- OBS
+- Streamlabs
+- XSplit
+- NVIDIA ShadowPlay
+- Native screenshot and recording tools
+- Desktop applications that capture frames through supported operating-system APIs
 
-## Why I Built This
+No software can prevent someone from photographing your physical display with a separate camera.
+Always verify protection with the exact software and configuration you intend to use.
 
-I leaked AWS credentials on a client Zoom call. Twice.
+## AI Screen Capture
 
-First time: terminal was minimized behind the browser. I "cleaned my desktop" before the call. Forgot the terminal existed. Someone saw the access key. We spent 48 hours rotating every credential.
+Desktop AI assistants and automation tools may use screenshots or desktop-capture APIs to interpret
+what is visible on your screen.
 
-Second time: moved Slack to monitor two. Sharing monitor one, so I figured I was safe. Switched to Display Capture for three seconds to show a PDF. My Slack DMs — including a confidential conversation — went live to everyone.
+NoCapture applies the same window-level protection to supported capture paths, helping reduce the
+risk of exposing password managers, private messages, financial information, terminals, and
+confidential documents.
 
-Minimizing is not protection. Moving to monitor two is not protection. "Just close your tabs" breaks your workflow.
+Protection is not universal. Capture behavior can vary between tools, operating systems, graphics
+drivers, permissions, and API implementations.
 
-So I learned Windows compositor APIs and built the toggle I actually needed.
+[Read about AI screen-capture risks](https://nocapture.membran.digital/blog/screen-capture-apis-desktop-extraction-crisis)
 
-[→ The full story](https://nocapture.membran.digital/blog/why-just-close-your-tabs-is-terrible-advice)
+## Privacy Use Cases
 
----
+### Remote Workers and Consultants
 
-## The AI Agent Problem
+Protect client documents, internal chats, research, and terminals while presenting or collaborating
+with customers.
 
-Here's what changed since I built this.
+### Streamers and Creators
 
-Claude Desktop's "computer use" feature screenshots your display every 2–5 seconds and feeds it to a vision model. Microsoft's Copilot Vision does the same. Dozens of "productivity" agents claim to "use your computer like a human" — they don't use APIs. They hit the frame buffer and OCR everything.
+Keep private chats, password managers, production tools, and stream controls out of broadcasts
+while keeping them visible locally.
 
-Your password manager. Your Slack DMs. Your bank balance. Your terminal with production credentials. All in frame. All the time.
+### Developers
 
-NoCapture blocks AI agent screenshots the same way it blocks Zoom. Same toggle. Same protection. Because the threat isn't just meetings anymore — it's 24/7 automated screen surveillance.
+Protect terminals, API keys, database consoles, deployment tools, and `.env` files during pair
+programming, support sessions, and technical demonstrations.
 
-[→ AI agents are the new screenshot threat](https://nocapture.membran.digital/blog/screen-capture-apis-desktop-extraction-crisis)
+### Healthcare and Legal Workflows
 
+Reduce accidental exposure of sensitive records, client information, and private documents during
+remote meetings.
 
----
+NoCapture is a technical privacy tool and does not by itself guarantee compliance with HIPAA,
+attorney-client privilege, GDPR, or any other legal or regulatory requirement.
 
-## Use Cases
+### AI Agent Users
 
-**Remote Workers & Consultants**
-Protect client docs, internal Slack, and competitor research during screen shares. Auto-cloak based on your calendar.
+Reduce the amount of desktop content exposed to applications that use supported screen-capture
+methods to interpret your computer screen.
 
-**Streamers & Creators**
-Hide OBS scenes, Discord DMs, and password managers from broadcast. Use Pin to Top for stream notes that stay local-only.
-
-**Developers**
-Keep terminals with API keys, database connections, and `.env` files invisible during pair programming. Smart Routines auto-cloak your terminal when Zoom launches.
-
-**Healthcare & Legal**
-Maintain HIPAA and attorney-client privilege. Cloak EHR systems and patient portals during telehealth. [→ Meeting privacy guide](https://nocapture.membran.digital/use-cases/meetings)
-
-**AI Agent Users**
-Run Claude Desktop, Copilot Vision, or screenshot-hungry agents without exposing your entire digital life. [→ AI agent privacy](https://nocapture.membran.digital/blog/ai-meeting-scrapers-window-titles)
-
----
+[Read the AI meeting privacy guide](https://nocapture.membran.digital/blog/ai-meeting-scrapers-window-titles)
 
 ## Architecture
 
-NoCapture uses native OS APIs — no hooks, no drivers, no kernel modules.
+NoCapture uses native operating-system APIs and does not require kernel drivers, browser
+extensions, or screen-capture hooks.
 
-- **Windows:** `SetWindowDisplayAffinity` with `WDA_EXCLUDEFROMCAPTURE`. DWM compositor-level exclusion.
-- **macOS:** `kCGWindowSharingNone`, `CGWindowListCreateImage` filtering.
-- **Linux:** X11 `XComposite` / Wayland `zwlr_screencopy_manager_v1`.
+| Platform | Technology | Status |
+|---|---|---|
+| Windows | `SetWindowDisplayAffinity` and `WDA_EXCLUDEFROMCAPTURE` | Supported |
+| macOS | Core Graphics window-sharing controls | Verify per release |
+| Linux/X11 | X11 and compositor APIs | Verify per release |
+| Linux/Wayland | Compositor-dependent protocols | Verify per compositor |
 
-<1% CPU. <20 MB RAM. Native APIs only.
+Performance and compatibility can vary by operating system, compositor, graphics driver, display
+configuration, and capture application.
 
----
+## Platform Support
+
+Check the [official download page](https://nocapture.membran.digital/dashboard) for current builds,
+system requirements, and supported versions.
+
+If a capture workflow does not behave as expected, please [open an issue](https://github.com/H-Was1/NoCapture/issues)
+with the following information:
+
+- Operating system and version.
+- NoCapture version.
+- Capture application and capture mode.
+- Number of displays and display configuration.
+- Graphics hardware and driver version.
+- Steps to reproduce the problem.
+
+Please do not include passwords, API keys, private messages, customer information, or other
+sensitive content in issue reports.
+
+## Frequently Asked Questions
+
+### Does NoCapture minimize or close protected windows?
+
+No. A protected window remains visible and interactive locally while protection is active.
+
+### Does NoCapture protect an entire monitor?
+
+NoCapture is primarily designed for window-level protection. Monitor-level behavior depends on the
+operating system and capture application.
+
+### Can NoCapture prevent someone from photographing my screen?
+
+No. A separate camera can photograph a physical display, and NoCapture cannot prevent that.
+
+### Does NoCapture work with every screen recorder?
+
+No. NoCapture targets supported operating-system capture paths. Test the exact recorder, meeting
+application, operating system, and display setup before using it for sensitive information.
+
+### Can I protect a password manager or terminal?
+
+Yes, provided the application and capture workflow support the operating-system protection method
+used by NoCapture. Verify the result with Live Preview before sharing.
+
+## Why I Built This
+
+I leaked AWS credentials during a client Zoom call. Twice.
+
+The first time, a terminal was minimized behind the browser. I had cleaned my desktop before the
+call but forgot that the terminal was still open. Someone saw the access key, and we spent
+48 hours rotating credentials.
+
+The second time, I moved Slack to another monitor and assumed it was safe. I switched to display
+capture for a few seconds to show a PDF, and private Slack messages appeared in the meeting.
+
+Minimizing is not protection. Moving a window to another monitor is not always protection. Closing
+everything also breaks the workflow.
+
+So I learned the relevant operating-system compositor APIs and built the toggle I needed.
+
+[Read the full story](https://nocapture.membran.digital/blog/why-just-close-your-tabs-is-terrible-advice)
 
 ## Resources
 
-- [Why "Just Close Your Tabs" Is Terrible Advice](https://nocapture.membran.digital/blog/why-just-close-your-tabs-is-terrible-advice)
+- [Official NoCapture website](https://nocapture.membran.digital)
+- [Download NoCapture](https://nocapture.membran.digital/dashboard)
+- [Meeting privacy use cases](https://nocapture.membran.digital/use-cases/meetings)
+- [Why “Just Close Your Tabs” Is Terrible Advice](https://nocapture.membran.digital/blog/why-just-close-your-tabs-is-terrible-advice)
 - [The Best App Hider for Screen Sharing](https://nocapture.membran.digital/blog/the-best-app-hider-for-screen-sharing)
 - [Hide Apps Without Breaking Workflow](https://nocapture.membran.digital/blog/hide-apps-in-screen-share-without-workflow-breaks)
-- [Screen Capture APIs & Desktop Extraction Crisis](https://nocapture.membran.digital/blog/screen-capture-apis-desktop-extraction-crisis)
-- [AI Meeting Scrapers & Window Title Harvesting](https://nocapture.membran.digital/blog/ai-meeting-scrapers-window-titles)
-
----
+- [Screen Capture APIs and Desktop Extraction](https://nocapture.membran.digital/blog/screen-capture-apis-desktop-extraction-crisis)
+- [AI Meeting Scrapers and Window Title Harvesting](https://nocapture.membran.digital/blog/ai-meeting-scrapers-window-titles)
+- [NoCapture changelog](https://nocapture.membran.digital/changelog)
 
 ## Contributing
 
-Solo-built, but open to contributions — especially macOS/Linux parity, translations, and bug reports.
+Contributions are welcome, especially for:
 
-See [Contact Page](https://nocapture.membran.digital/company/contact).
+- macOS and Linux compatibility.
+- New capture-workflow tests.
+- Accessibility improvements.
+- Translations.
+- Documentation.
+- Bug reports and reproducible test cases.
+
+Before contributing:
+
+1. Read the repository guidelines.
+2. Open an issue for substantial changes.
+3. Do not submit private data, credentials, or confidential screenshots.
+4. Include operating-system and capture-application details when reporting bugs.
+
+## Security
+
+Do not use GitHub issues to report security vulnerabilities.
+
+For security reports, contact:
+
+[contact@membran.digital](mailto:contact@membran.digital)
+
+Please avoid including credentials, private messages, customer data, or other sensitive information
+in public reports.
+
+## License
+
+This project is licensed under the terms described in the [LICENSE](LICENSE) file.
 
 ---
 
 <p align="center">
-  Built with obsession, not surveillance.<br>
-  <a href="https://www.producthunt.com/products/nocapture?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-nocapture" target="_blank" rel="noopener noreferrer"><img alt="NoCapture - AI privacy and app hiding for screen sharing | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1228484&amp;theme=light&amp;t=1787317648553"></a><br>
+  Built with obsession, not surveillance.
+</p>
+
+<p align="center">
   <a href="https://membran.digital">Membran.digital</a> •
   <a href="mailto:contact@membran.digital">contact@membran.digital</a>
 </p>
