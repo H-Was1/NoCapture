@@ -47,9 +47,13 @@ Minimizing a window or moving it to another monitor does not always protect it f
 capture. NoCapture applies operating-system-level window capture protection so a selected window
 remains visible and usable locally while being excluded from supported capture paths.
 
-## How It Works
+## See How It Works
 
-[Watch the screen capture protection demo](https://github.com/user-attachments/assets/5136c722-0ca3-4845-87af-586021d28e96)
+<div align="center">
+
+https://github.com/user-attachments/assets/5136c722-0ca3-4845-87af-586021d28e96
+
+</div>
 
 
 NoCapture hides selected windows from supported screen capture, recording, and screen-sharing
